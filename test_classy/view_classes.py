@@ -158,6 +158,15 @@ class MakeResponseView(FlaskView):
     def index(self):
         return "Index"
 
+class ModifiedSuffixAPI(FlaskView):
+
+    @classmethod
+    def get_class_suffix(cls):
+        return "API"
+
+    def index(self):
+        return "Modified Suffix"
+
 class VariedMethodsView(FlaskView):
 
     def index(self):
